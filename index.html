@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RnS Site - Mendukung Anak Disabilitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>RnS Site</h1>
+            <p>Mendukung Anak Disabilitas dengan Kasih dan Ilmu</p>
+            <nav>
+                <ul>
+                    <li><a href="#report">Laporkan Anak</a></li>
+                    <li><a href="#community">Komunitas</a></li>
+                    <li><a href="#resources">Sumber Daya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Laporan -->
+        <section id="report" class="section">
+            <div class="container">
+                <h2>Laporkan Anak Disabilitas</h2>
+                <p>Bantu kami mengenali dan mendukung anak-anak dengan keterbatasan fisik maupun mental.</p>
+                <form id="report-form" action="submit-report" method="POST">
+                    <div class="form-group">
+                        <label for="child-name">Nama Anak:</label>
+                        <input type="text" id="child-name" name="child_name" placeholder="Masukkan nama anak" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="disability-type">Jenis Keterbatasan:</label>
+                        <input type="text" id="disability-type" name="disability_type" placeholder="Misalnya: Autisme, Tuna Rungu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parent-contact">Kontak Orang Tua:</label>
+                        <input type="text" id="parent-contact" name="parent_contact" placeholder="Nomor telepon aktif" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Catatan Tambahan:</label>
+                        <textarea id="message" name="message" placeholder="Tambahkan informasi penting"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim Laporan</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Bagian Komunitas -->
+        <section id="community" class="section">
+            <div class="container">
+                <h2>Komunitas Pendukung</h2>
+                <p>Bergabunglah dengan komunitas kami untuk membantu anak-anak mencapai potensi maksimal.</p>
+                <div class="grid">
+                    <div class="card1">
+                        <h3>Pelatihan Fisik</h3>
+                        <p>Meningkatkan kekuatan fisik dan kepercayaan diri anak.</p>
+                    </div>
+                    <div class="card2">
+                        <h3>Pendampingan</h3>
+                        <p>Pendampingan anak dan keluarga dengan pendekatan holistik.</p>
+                    </div>
+                    <div class="card3">
+                        <h3>Konsultasi Ahli</h3>
+                        <p>Konsultasi dengan psikolog dan spesialis disabilitas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Sumber Daya -->
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>Sumber Daya Edukasi</h2>
+                <p>Pelajari cara merawat dan mendukung anak-anak disabilitas dengan panduan kami.</p>
+                <ul class="resource-list">
+                    <li><a href="#">Panduan Dasar Perawatan Anak Disabilitas</a></li>
+                    <li><a href="#">Cara Memberikan Dukungan Emosional</a></li>
+                    <li><a href="#">Tips untuk Meningkatkan Kemandirian</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 RnS Site. Bersama Kita Bisa Membuat Perbedaan.</p>
+    </footer>
+</body>
+</html>
